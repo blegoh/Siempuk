@@ -1,0 +1,19 @@
+
+<ion-view view-title="Login" name="login-view">
+  <ion-content class="padding">
+    <div id="logo">
+      <img src="img/ionic.png">
+      <h1>SIEMPUK</h1>
+    </div>
+    <div class="list list-inset">
+      <label class="item item-input">
+        <input type="text" placeholder="Email" ng-model="data.email">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="Password" ng-model="data.password">
+      </label>
+    </div>
+    <button class="button button-block button-calm" ng-click="login()">Login</button>
+    <button class="button button-block button-stable" ng-click="toRegister()">Register</button>
+  </ion-content>
+</ion-view>

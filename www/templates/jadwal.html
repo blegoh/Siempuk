@@ -1,0 +1,13 @@
+<ion-view view-title="Dashboard">
+  <ion-content>
+    <h1>Jadwal Pemupukan</h1>
+    <ion-list>
+      <ion-item ng-repeat="jadwal in jadwals">
+        {{jadwal.TglPupuk | date}}
+        urea {{jadwal.Urea}}
+        sp36 {{jadwal.SP}}
+        kcl {{jadwal.KCL}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

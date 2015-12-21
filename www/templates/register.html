@@ -1,0 +1,31 @@
+<ion-view view-title="Login" name="login-view">
+  <ion-content class="padding">
+    <div class="list list-inset">
+      <label class="item item-input">
+        <input type="text" placeholder="Nama" ng-model="data.name">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Email" ng-model="data.email">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="Password" ng-model="data.password">
+      </label>
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Provinsi
+        </div>
+        <select ng-model="data.prov" ng-options="prov.id_prov as prov.nama for prov in prov" ng-change="updateKab()">
+        </select>
+      </label>
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Kabupaten
+        </div>
+        <select ng-model="data.kab" ng-options="kab.id_kab as kab.nama for kab in kab">
+        </select>
+      </label>
+    </div>
+    <button class="button button-block button-calm" ng-click="register()">register</button>
+    <button class="button button-block button-stable" ng-click="toLogin()">Login</button>
+  </ion-content>
+</ion-view>

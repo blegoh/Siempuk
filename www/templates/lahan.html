@@ -1,0 +1,15 @@
+<ion-view view-title="Lahan">
+  <ion-content>
+    <h2>Jumlah Lahan : {{lahans.length}}</h2>
+    <a class="button button-balanced" href="#/app/tambah">
+      Tambah Lahan
+    </a>
+    <br />
+    <br />
+    <ion-list>
+      <ion-item ng-repeat="lahan in lahans" href="#/app/detail/{{$index}}">
+        {{lahan.Nama}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

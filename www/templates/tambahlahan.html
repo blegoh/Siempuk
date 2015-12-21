@@ -1,0 +1,19 @@
+<ion-view view-title="TambahTanam">
+  <ion-content>
+    <h2>Lahan ini belum ditanami</h2>
+    <h2>Tambahkan penanaman</h2>
+    <div class="list">
+      <label class="item item-input">
+        <input type="text" placeholder="Jumlah pohon" ng-model="data.jum">
+      </label>
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Jenis
+        </div>
+        <select ng-model="data.jenis" ng-options="jenis.IDJenis as jenis.NamaJenis for jenis in jenis">
+        </select>
+      </label>
+    </div>
+    <button class="button button-block button-balanced" ng-click="tanam()">Simpan</button>
+  </ion-content>
+</ion-view>
